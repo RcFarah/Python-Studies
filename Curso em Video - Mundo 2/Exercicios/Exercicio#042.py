@@ -9,7 +9,7 @@ if (seg_b - seg_c) < seg_a < seg_b + seg_c and (seg_a - seg_c) < seg_b < seg_a +
     print('Esses segmentos podem formar um triângulo!')
     if seg_a == seg_b == seg_c:
         print('Esse é um triangulo EQUILÁTERO!')
-    elif seg_a != seg_b != seg_c:
+    elif seg_a != seg_b != seg_c != seg_a:
         print('Esse é um triângulo ESCALENO!')
     else:
         print('Esse é um triângulo ISÓSCELES!')
