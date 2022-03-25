@@ -1,11 +1,14 @@
 # Exercicio #044
 
-valor_original = float(input('Digite o valor do produto: R$'))
-forma_pagamento = int(input('Qual a forma de pagamento?\n'
-                            '(1) para Dinheiro\n'
-                            '(2) para Á vista no Cartão\n'
-                            '(3) para Até 2x no Cartão\n'
-                            '(4) para 3x ou mais no Cartão\n'
+print('{:-^40}'.format(' LOJA DE AÇUDE '))  # O ^ serve para indicar que é para preencher o que se pede dentro de X
+# caracteres
+
+valor_original = float(input('\nDigite o valor do produto: R$'))
+forma_pagamento = int(input('\nQual a forma de pagamento?\n'
+                            '[1] para Dinheiro\n'
+                            '[2] para Á vista no Cartão\n'
+                            '[3] para Até 2x no Cartão\n'
+                            '[4] para 3x ou mais no Cartão (Juros de 20%)\n'
                             'Digite: '))
 
 if forma_pagamento == 1:
@@ -28,3 +31,6 @@ elif forma_pagamento == 4:
     valor_cartao_parcelado = valor_original + acrescimo_cartao
     print('O valor total a ser pago é de: R${:.2f}\n'
           'Valor dos Juros Aplicados: R${:.2f}'.format(valor_cartao_parcelado, acrescimo_cartao))
+
+else:
+    print('Forma de pagamento inválido, por favor, tente novamente!')
