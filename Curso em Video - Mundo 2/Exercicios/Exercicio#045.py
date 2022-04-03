@@ -1,5 +1,7 @@
 # Exercicio #045
 
+# Crie um programa que faça o computador jogar Pedra, Papel e Tesoura com você.
+
 import random
 
 lista_maquina = ['Pedra', 'Papel', 'Tesoura']
