@@ -1,5 +1,8 @@
 # Desafio #035
 
+# Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um
+# triângulo.
+
 segmento_a = float(input('Coloque o valor de um lado: '))
 segmento_b = float(input('Coloque o valor de outro lado: '))
 segmento_c = float(input('Coloque o valor de outro lado: '))

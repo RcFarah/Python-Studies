@@ -1,5 +1,7 @@
 # Desafio #014
 
+# Escreva um programa que converta uma temperatura digitando em graus Celsius e converta para graus Fahrenheit.
+
 unid_temp = str(input('De que unidade de temperatura que deseja fazer a conversão? ')).strip().title()
 temperatura = float(input('Qual a temperatura incial? (SOMENTE NÚMERO) '))
 unid_converter = str(input('Para qual unidade que deseja fazer a conversão? ')).strip().title()

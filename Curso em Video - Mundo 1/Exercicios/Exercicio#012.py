@@ -1,5 +1,7 @@
 # Desafio #012
 
+# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+
 produto_preco = float(input('Qual o preço do produto? '))
 desconto = int(input('Qual a % de desconto que deseja aplicar? '))
 calculo_desconto = produto_preco * (desconto / 100)

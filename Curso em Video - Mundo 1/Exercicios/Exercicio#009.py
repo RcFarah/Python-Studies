@@ -1,5 +1,7 @@
 # Desafio #009
 
+# Faça um programa que leia um número Inteiro qualquer e mostre na tela a sua tabuada.
+
 numero = int(input('Digite um número, para ver sua tabuada:'))
 x1 = numero * 1
 x2 = numero * 2

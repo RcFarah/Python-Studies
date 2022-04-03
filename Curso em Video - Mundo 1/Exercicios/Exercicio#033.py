@@ -1,5 +1,7 @@
 # Desafio #033
 
+# Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+
 print('NÃO REPITA NÚMEROS!')
 primeiro_numero = int(input('Digite o primeiro número: '))
 segundo_numero = int(input('Digite o segundo número: '))

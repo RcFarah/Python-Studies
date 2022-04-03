@@ -1,5 +1,7 @@
 # Desafio #013
 
+# Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+
 salario_inicial = float(input('Qual o salário atual do funcionário? '))
 porcentagem_aumento = int(input('Qual a porcentagem do aumento? '))
 calculo_aumento = salario_inicial * (porcentagem_aumento / 100)

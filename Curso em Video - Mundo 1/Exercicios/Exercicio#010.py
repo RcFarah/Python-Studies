@@ -1,5 +1,7 @@
 # Desafio #010
 
+# Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+
 valorR = float(input('Qual o valor que você deseja converter? R$'))
 dolar = valorR / 5.67
 euro = valorR / 6.78

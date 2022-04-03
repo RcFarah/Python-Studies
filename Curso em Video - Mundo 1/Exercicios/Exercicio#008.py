@@ -1,5 +1,7 @@
 # Desafio #008
 
+# Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
 print('Conversor de Medidas de Metro para: Decametro, Hectometro, Quilometro, Decímetro, Centímento e Milímetro.')
 medida_metros = float(input('Digite uma medida em metros: '))
 medida_dam = medida_metros * 10
