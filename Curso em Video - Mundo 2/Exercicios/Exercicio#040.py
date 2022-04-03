@@ -1,22 +1,24 @@
-# Exercício #040
+# Exercicio #039
 
-# Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com
-# a média atingida:
-# - Média abaixo de 5.0: REPROVADO
-# - Média entre 5.0 e 6.9: RECUPERAÇÃO
-# - Média 7.0 ou superior: APROVADO
+# Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, se ele ainda vai se
+# alistar ao serviço militar, se é a hora exata de se alistar ou se já passou do tempo do alistamento. Seu programa
+# também deverá mostrar o tempo que falta ou que passou do prazo.
 
-aluno = str(input('Digite o nome do Aluno: ')).title().strip()
-nota1 = int(input('Digite a primeira nota de {}: '.format(aluno)))
-nota2 = int(input('Digite a segunda nota de {}: '.format(aluno)))
-media = (nota1 + nota2) / 2
+from datetime import date
 
-if media >= 7.0:
-    print('O(A) aluno(a) {} foi APROVADO.\n'
-          'Sua média foi: {}'.format(aluno, media))
-if 5.0 <= media < 6.9:
-    print('O(A) aluno(a) {} está de RECUPERAÇÃO.\n'
-          'Sua média foi: {}'.format(aluno, media))
-if media < 5.0:
-    print('O(A) aluno(a) {} foi REPROVADO.\n'
-          'Sua média foi: {}'.format(aluno, media))
+data = date
+
+nascimento = int(input('Digite o ano do seu nascimento: '))
+
+idade = date.today().year - nascimento
+alistamento = nascimento + 18
+
+if idade > 18:
+    print('Já passou do tempo do seu alistamento militar!\n'
+          'O seu alistamento foi em {}'.format(alistamento))
+elif idade == 18:
+    print('Já é hora de fazer o seu alistamento militar!\n'
+          'O seu alistamento deverá ser feito IMEDIATAMENTE!')
+elif idade < 18:
+    print('Você ainda não precisa se alistar no serviço militar!\n'
+          'Seu alistamento será em {}'.format(alistamento))
