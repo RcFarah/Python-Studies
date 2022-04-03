@@ -3,23 +3,26 @@
 # Crie um programa que faça o computador jogar Pedra, Papel e Tesoura com você.
 
 import random
+import time
 
 lista_maquina = ['Pedra', 'Papel', 'Tesoura']
 jogar = int(input('Olá, vamos jogar Pedra, Papel e Tesoura?\n'
-                  '(1) para SIM\n'
-                  '(2) para NÃO\n'
+                  '[1] para SIM\n'
+                  '[2] para NÃO\n'
                   'Digite: '))
 
 if jogar == 1:
+    time.sleep(1)
     jogada_usuario = int(input('Okay, então partiu diversão!\n'
                                'Para começar, digite:\n'
-                               '(1) para Pedra\n'
-                               '(2) para Papel\n'
-                               '(3) para Tesoura.\n'
+                               '[1] para Pedra\n'
+                               '[2] para Papel\n'
+                               '[3] para Tesoura.\n'
                                'Boa sorte!\n'))
     escolha_maquina = random.choice(lista_maquina)
 
     if jogada_usuario == 1:
+        time.sleep(1)
         jogada_usuario = 'Pedra'
         if escolha_maquina == 'Pedra':
             print('Você jogou: {}\n'
@@ -35,6 +38,7 @@ if jogar == 1:
                   'VOCÊ GANHOU!'.format(jogada_usuario, escolha_maquina))
 
     if jogada_usuario == 2:
+        time.sleep(1)
         jogada_usuario = 'Papel'
         if escolha_maquina == 'Pedra':
             print('Você jogou: {}\n'
@@ -50,6 +54,7 @@ if jogar == 1:
                   'MÁQUINA GANHOU!'.format(jogada_usuario, escolha_maquina))
 
     if jogada_usuario == 3:
+        time.sleep(1)
         jogada_usuario = 'Tesoura'
         if escolha_maquina == 'Pedra':
             print('Você jogou: {}\n'
@@ -64,4 +69,5 @@ if jogar == 1:
                   'Máquina jogou: {}\n'
                   'EMPATE!'.format(jogada_usuario, escolha_maquina))
 else:
+    time.sleep(1)
     print('Okay, então MORRE, DIABO.')
