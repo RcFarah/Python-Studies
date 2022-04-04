@@ -1,4 +1,4 @@
-# Estudos Pytgon
+# Estudos Python
 
 *PT-BR*
 
