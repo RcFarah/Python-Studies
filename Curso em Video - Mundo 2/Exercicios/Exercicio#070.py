@@ -7,11 +7,10 @@
 # C) qual é o nome do produto mais barato.
 
 # Iniciando variaveis iniciais
-total_produtos = 0
-total_a_pagar = 0
+total_produtos = produtos_mais_de_mil = total_a_pagar = 0
 preco_produto_mais_barato = 9999999999999999
 nome_produto_mais_barato = ''
-produtos_mais_de_mil = 0
+
 
 print('-' * 25)
 print('PROGRAMA INICIADO.')
@@ -28,28 +27,23 @@ while True:
     total_a_pagar += preco_produto
     if preco_produto > 1000:
         produtos_mais_de_mil += 1
+
+
     if preco_produto < preco_produto_mais_barato:
         nome_produto_mais_barato = produto
         preco_produto_mais_barato = preco_produto
 
     # Criação de condição de parada
-    continuar = str(input('Deseja continuar? (S/N): ')).upper().strip()
-    if continuar not in 'NS':
-        print('OPÇÃO INVÁLIDA.\nTENTE NOVAMENTE.')
-        while continuar not in 'NS':
-            continuar = str(input('Deseja continuar? (S/N): ')).upper().strip()
-            if continuar == 'N':
-                break
-        if continuar == 'N':
-            print('-' * 25)
-            print('EFETUANDO CÁLCULOS.')
-            print('-' * 25)
-            break
-    elif continuar == 'N':
+
+    continuar = ' '
+    while continuar not in 'NS':
+        continuar = str(input('Deseja continuar? (S/N): ')).upper().strip()[0]
+    if continuar == 'N':
         print('-' * 25)
         print('EFETUANDO CÁLCULOS.')
         print('-' * 25)
         break
+
 
     print('-' * 25, end='\n')
 
@@ -57,5 +51,5 @@ while True:
 print('\nSua compra com o total de {} produtos foi efetuada.\n'
       'PREÇO TOTAL: R${}\n'
       'Produtos que custam mais de R$1000,00: {}\n'
-      'Produto mais barato: {} que custa R${}'.format(total_produtos, total_a_pagar, produtos_mais_de_mil,
+      'Produto mais barato: {}, que custa R${}'.format(total_produtos, total_a_pagar, produtos_mais_de_mil,
                                                       nome_produto_mais_barato, preco_produto_mais_barato))

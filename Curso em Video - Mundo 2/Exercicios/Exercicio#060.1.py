@@ -1,19 +1,17 @@
-# Exercicio #060
+# Exercicio #060.1
 
 # Faça um programa que leia um número qualquer e mostre o seu fatorial.
 # Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
 # UTILIZANDO WHILE
 
-numero = int(input('Digite o número que deseja descobrir o fatorial: '))
-multiplicador = numero - 1
-resultado = 0
-resultado_final = 0
+numero = int(input('Digite um número para descobrir seu fatorial: '))
+contador = numero
+fatorial = 1
 
-while multiplicador > 0:
-    resultado = numero * multiplicador
-    multiplicador -= 1
-    resultado_final = resultado * multiplicador
-    print(resultado_final)
+print('Calculando {}! = '.format(numero), end='')
 
-
-print(resultado_final)
+while contador > 0:
+    print(contador, ' x ' if contador > 1 else ' = ', end='')
+    fatorial = fatorial * contador
+    contador = contador - 1
+print(fatorial)

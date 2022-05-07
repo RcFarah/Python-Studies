@@ -51,7 +51,7 @@ elif sexo_opcao == 'F':
 elif sexo_opcao == 'O':
     sexo = 'Outros'
 
-while sexo_opcao not in ['M', 'F', 'O']:
+while sexo_opcao not in ['M', 'F', 'O']: # ou while sexo_opcao not in 'MFO':
     print('Opção inválida, por favor revise e tente novamente.')
     sexo_opcao = str(input('Escolha uma opção para o sexo do paciente:\n'
                            '[M] Masculino\n'
@@ -100,10 +100,7 @@ if imprimir == 'SIM':
                                                         nome_plano, fumante, alcoolatra, drogas, alergia, tipo_alergia),
           '_' * 40, end='\n \n')
     print('Contatos:\nEmail: {}     Telefone: {}'.format(contatos[1], contatos[0]))
-    print('\n'
-          '\n'
-          '\n'
-          '\n',
+    print('\n' * 4,
           '-' * 10, '{}'.format(data_atual_br), '-' * 10)
     print('\n \n \n IMPRESSÃO FINALIZADA')
 else:

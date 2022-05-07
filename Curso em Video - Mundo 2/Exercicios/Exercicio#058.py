@@ -7,12 +7,11 @@ import random
 
 lista_pc_numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 tentativas = 0
-numero_pensado_pc = 998
+numero_pensado_pc = random.choice(lista_pc_numeros)
 resposta = 999
 
 while resposta != numero_pensado_pc:
-    numero_pensado_pc = random.choice(lista_pc_numeros)
-    print('Irei pensar em um número de 0 a 10, tente adivinhar qual número eu pensei!')
+    print('Pensei em um número de 0 a 10, tente adivinhar qual número eu pensei!')
     resposta = int(input('\nQual número você acha que a máquina pensou? '))
     tentativas += 1
     print('ERROUUUUU.\n'
